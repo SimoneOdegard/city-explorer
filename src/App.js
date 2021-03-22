@@ -35,7 +35,7 @@ class App extends React.Component{
         {this.state.displayResults &&
           <>
             <h2>{this.state.location.display_name}</h2>
-            <img src={this.state.imgSrc} alt="image"/>
+            <img src={this.state.imgSrc} alt="map"/>
           </>
         }
       </>
