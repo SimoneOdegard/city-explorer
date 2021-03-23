@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import style from './style.css';
 
 class App extends React.Component{
   constructor(props){
