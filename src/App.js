@@ -14,7 +14,7 @@ class App extends React.Component{
       searchQuery: '',
       imgSrc: '',
       displayResults: false,
-      hasError: null,
+      hasError: false,
       errorObj: {}
     }
   }
@@ -29,7 +29,7 @@ class App extends React.Component{
     this.setState({
       location: locationArray[0],
       displayResults: true,
-      hasError: null,
+      hasError: false,
       imgSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=13`
     });
     } catch(error) {
