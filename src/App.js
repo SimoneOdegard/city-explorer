@@ -22,9 +22,9 @@ class App extends React.Component{
   getLocationInfo = async(e) => {
     e.preventDefault();
     console.log(this.state.searchQuery);
-    try {const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${this.state.searchQuery}&format=json`;
+    const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${this.state.searchQuery}&format=json`;
     const location = await axios.get(url)
-    const locationArray = location.data;
+    try {const locationArray = location.data;
 
     this.setState({
       location: locationArray[0],
