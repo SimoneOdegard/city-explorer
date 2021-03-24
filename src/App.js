@@ -14,22 +14,22 @@ class App extends React.Component{
       searchQuery: '',
       imgSrc: '',
       displayResults: false,
-      hasError: null,
+      hasError: false,
       errorObj: {}
     }
   }
 
   getLocationInfo = async(e) => {
-    e.preventDefault();
+    try {e.preventDefault();
     console.log(this.state.searchQuery);
-    try {const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${this.state.searchQuery}&format=json`;
+    const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${this.state.searchQuery}&format=json`;
     const location = await axios.get(url)
     const locationArray = location.data;
 
     this.setState({
       location: locationArray[0],
       displayResults: true,
-      hasError: null,
+      hasError: false,
       imgSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=13`
     });
     } catch(error) {
