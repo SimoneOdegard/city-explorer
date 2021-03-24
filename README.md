@@ -23,7 +23,16 @@
 Partner: Chance and Jake
 Drawing: https://docs.google.com/drawings/d/1mttMJjaQrj3uX8Ay2tRAFqXsT1KcYTVugDh_F0RJgJg/edit
 **Name of feature:** Lab 6
-**Estimate of time needed to complete:** 4hours
-**Start time:** 2:30
-**Finish time:** 9:30
+**Estimate of time needed to complete:** 4 hours
+**Start time:** 2:30pm
+**Finish time:** 9:30pm
 **Actual time needed to complete:** 7 hours
+
+Partner: Elijah
+Drawing: https://docs.google.com/drawings/d/141wLKSvPJWDnVo_hj0ZTtd_zR_Air1Vg1L0qLoIsWGU/edit
+**Name of feature:** Lab 7
+**Estimate of time needed to complete:** 5 hours
+**Start time:** 2:00pm
+**Break:** 7-8pm
+**Finish time:** 8:30pm
+**Actual time needed to complete:** 5.5 hours
