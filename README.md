@@ -36,3 +36,11 @@ Drawing: https://docs.google.com/drawings/d/141wLKSvPJWDnVo_hj0ZTtd_zR_Air1Vg1L0
 **Break:** 7-8pm
 **Finish time:** 8:30pm
 **Actual time needed to complete:** 5.5 hours
+
+Partner: Peter
+Drawing: https://docs.google.com/drawings/d/1yAIjPMGdjeg4hOyIrsvVEAfGHwWvnscXlczeDcJnZDY/edit
+**Name of feature:** Lab 8: Added Weather API
+**Estimate of time needed to complete:** 5 hours
+**Start time:** 2:00pm
+**Finish time:** 7:54pm
+**Actual time needed to complete:** about 6 hours
