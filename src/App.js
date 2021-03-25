@@ -15,15 +15,23 @@ class App extends React.Component{
       imgSrc: '',
       displayResults: false,
       hasError: false,
-      errorObj: {}
+      errorObj: {},
+      weatherForecast:[]
     }
+    this.getLocationInfo = this.getLocationInfo.bind(this);
   }
 
-  getLocationInfo = async(e) => {
+  getWeatherInfo = async(e) => {
+    const SERVER = 'http://localhost:3001';
+    // const SERVER = 'https://city-explorer-simone.herokuapp.com/';
+    const forecast = await axios.get(`${SERVER}/weather?city_name=${this.state.searchQuery}`);
+    const forecastArray = forecast.data;
+    this.setState({ weatherForecast: forecastArray });
+  }
+
+  async getLocationInfo(e) {
     e.preventDefault();
-    try {
-    console.log(this.state.searchQuery);
-    const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${this.state.searchQuery}&format=json`;
+    try { const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_KEY}&q=${this.state.searchQuery}&format=json`;
     const location = await axios.get(url)
     const locationArray = location.data;
 
@@ -33,6 +41,9 @@ class App extends React.Component{
       hasError: false,
       imgSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=13`
     });
+
+    this.getWeatherInfo();
+
     } catch(error) {
       this.setState({ 
         hasError: true,
@@ -63,7 +74,7 @@ class App extends React.Component{
                     Latitude: {this.state.location.lat}
                     <br></br>
                     Longitude: {this.state.location.lon}
-                    <Forecast />
+                    <Forecast weatherForecast={this.state.weatherForecast} getWeatherInfo={this.getWeatherInfo}/>
                 </Card.Text>
               </Card.Body>
             </Card>
