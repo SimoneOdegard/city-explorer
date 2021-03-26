@@ -56,13 +56,19 @@ class App extends React.Component{
     console.log(this.state);
     return (
       <div className="objects">
-        <h1 className="welcome">Welcome!</h1><br/>
+        <center>
+        <h1 className="welcome">City Explorer</h1>
+        <h3>Let's search for a city.</h3>
+        <br/>
         <form className="form" onSubmit={this.getLocationInfo}>
           <input onChange={(e) => this.setState({ searchQuery: e.target.value})} placeholder="city"/>
           <button type = "submit"> Explore!</button>
         </form>
+        </center>
+        
         {this.state.displayResults &&
-          <Weather
+          <center>
+          <Weather className="Weather"
           imgSrc={this.state.imgSrc}
           location={this.state.location}
           lat={this.state.location.lat}
@@ -70,6 +76,7 @@ class App extends React.Component{
           weatherForecast={this.state.weatherForecast} 
           getWeatherInfo={this.getWeatherInfo}
           />
+          </center>
         }
         {this.state.hasError &&
           <>

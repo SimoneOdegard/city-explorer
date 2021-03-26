@@ -16,9 +16,9 @@ class Weather extends React.Component {
           <Card.Title>{this.props.location.display_name}</Card.Title>
           <Card.Text>
             Latitude: {this.props.location.lat}
-            <br></br>
+            <br/>
             Longitude: {this.props.location.lon}
-            <br></br>
+            <br/><br/>
             <WeatherDay 
             weatherForecast={this.props.weatherForecast} 
             getWeatherInfo={this.getWeatherInfo}
