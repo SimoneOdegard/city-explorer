@@ -21,9 +21,9 @@ class App extends React.Component{
 
   getWeatherInfo = async(e) => {
     // LOCAL SERVER
-    const forecast = await axios.get(`${process.env.REACT_APP_LOCALSERVER}/weather?city_name=${this.state.searchQuery}`);
+    // const forecast = await axios.get(`${process.env.REACT_APP_LOCALSERVER}/weather?city_name=${this.state.searchQuery}`);
     // HEROKU SERVER
-    // const forecast = await axios.get(`${process.env.REACT_APP_SERVER}/weather?city_name=${this.state.searchQuery}`);
+    const forecast = await axios.get(`${process.env.REACT_APP_SERVER}/weather?city_name=${this.state.searchQuery}`);
     const forecastArray = forecast.data;
     this.setState({ weatherForecast: forecastArray });
   }
