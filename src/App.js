@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import './style.css';
-import WeatherDay from './WeatherDay';
+import Weather from './Weather';
 import Error from './error';
-// import Forecast from './forecast';
 
 class App extends React.Component{
   constructor(props){
@@ -63,7 +62,7 @@ class App extends React.Component{
           <button type = "submit"> Explore!</button>
         </form>
         {this.state.displayResults &&
-          <WeatherDay
+          <Weather
           imgSrc={this.state.imgSrc}
           location={this.state.location}
           lat={this.state.location.lat}
