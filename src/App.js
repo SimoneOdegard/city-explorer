@@ -1,10 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
 import './style.css';
-import Map from './map';
-import Forecast from './forecast';
+import WeatherDay from './WeatherDay';
+import Error from './error';
+// import Forecast from './forecast';
 
 class App extends React.Component{
   constructor(props){
@@ -22,9 +21,10 @@ class App extends React.Component{
   }
 
   getWeatherInfo = async(e) => {
-    const SERVER = 'http://localhost:3001';
-    // const SERVER = 'https://city-explorer-simone.herokuapp.com/';
-    const forecast = await axios.get(`${SERVER}/weather?city_name=${this.state.searchQuery}`);
+    // LOCAL SERVER
+    const forecast = await axios.get(`${process.env.REACT_APP_LOCALSERVER}/weather?city_name=${this.state.searchQuery}`);
+    // HEROKU SERVER
+    // const forecast = await axios.get(`${process.env.REACT_APP_SERVER}/weather?city_name=${this.state.searchQuery}`);
     const forecastArray = forecast.data;
     this.setState({ weatherForecast: forecastArray });
   }
@@ -63,27 +63,19 @@ class App extends React.Component{
           <button type = "submit"> Explore!</button>
         </form>
         {this.state.displayResults &&
-            <Card style={{ width: '40rem'}}
-              bg="secondary"
-              text="light"
-            >
-              <Map imgSrc={this.state.imgSrc}/>
-              <Card.Body>
-                <Card.Title>{this.state.location.display_name}</Card.Title>
-                <Card.Text>
-                    Latitude: {this.state.location.lat}
-                    <br></br>
-                    Longitude: {this.state.location.lon}
-                    <Forecast weatherForecast={this.state.weatherForecast} getWeatherInfo={this.getWeatherInfo}/>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+          <WeatherDay
+          imgSrc={this.state.imgSrc}
+          location={this.state.location}
+          lat={this.state.location.lat}
+          lon={this.state.location.lon}
+          weatherForecast={this.state.weatherForecast} 
+          getWeatherInfo={this.getWeatherInfo}
+          />
         }
         {this.state.hasError &&
-            <Card>
-              <Card.Body><h1>Error: Unable to geocode</h1></Card.Body>
-              <Card.Body><p>{this.state.errorObj}</p></Card.Body>
-            </Card>
+          <>
+            <Error errorObj={this.state.errorObj}/>
+          </>
         }
       </div>
     )
