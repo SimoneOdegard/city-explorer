@@ -7,7 +7,7 @@ class WeatherDay extends React.Component {
 
   forecastRender() {
     const data = this.props.weatherForecast;
-    return <div><Card.Title>Daily Forecast</Card.Title><ListGroup>{data.map(item => <ListGroup.Item>{item.date}: {item.description}</ListGroup.Item>)}</ListGroup></div>
+    return <div><ListGroup>{data.map(item => <ListGroup.Item variant="dark">{item.date}: {item.description}</ListGroup.Item>)}</ListGroup></div>
   }
 
   render() {

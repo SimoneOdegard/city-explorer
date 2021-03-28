@@ -29,36 +29,43 @@ An application that allows the user to search cities for weather details and mov
 - Elijah Prom
 - Jessi Velazquez
 - TA Kristian
+- [Background Image Credit](https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-- Partner: Chance and Jake
-- Drawing: https://docs.google.com/drawings/d/1mttMJjaQrj3uX8Ay2tRAFqXsT1KcYTVugDh_F0RJgJg/edit
-- **Name of feature:** Lab 6
-- **Estimate of time needed to complete:** 4 hours
-- **Start time:** 2:30pm
-- **Finish time:** 9:30pm
-- **Actual time needed to complete:** 7 hours
+Partner: Chance and Jake
+Drawing: https://docs.google.com/drawings/d/1mttMJjaQrj3uX8Ay2tRAFqXsT1KcYTVugDh_F0RJgJg/edit
+**Name of feature:** Lab 6
+**Estimate of time needed to complete:** 4 hours
+**Start time:** 2:30pm
+**Finish time:** 9:30pm
+**Actual time needed to complete:** 7 hours
 
-- Partner: Elijah
-- Drawing: https://docs.google.com/drawings/d/141wLKSvPJWDnVo_hj0ZTtd_zR_Air1Vg1L0qLoIsWGU/edit
-- **Name of feature:** Lab 7
-- **Estimate of time needed to complete:** 5 hours
-- **Start time:** 2:00pm
-- **Break:** 7-8pm
-- **Finish time:** 8:30pm
-- **Actual time needed to complete:** 5.5 hours
+Partner: Elijah
+Drawing: https://docs.google.com/drawings/d/141wLKSvPJWDnVo_hj0ZTtd_zR_Air1Vg1L0qLoIsWGU/edit
+**Name of feature:** Lab 7
+**Estimate of time needed to complete:** 5 hours
+**Start time:** 2:00pm
+**Break:** 7-8pm
+**Finish time:** 8:30pm
+**Actual time needed to complete:** 5.5 hours
 
-- Partner: Peter
-- Drawing: https://docs.google.com/drawings/d/1yAIjPMGdjeg4hOyIrsvVEAfGHwWvnscXlczeDcJnZDY/edit
-- **Name of feature:** Lab 8: Added Weather API
-- **Estimate of time needed to complete:** 5 hours
-- **Start time:** 2:00pm
-- **Finish time:** 7:54pm
-- **Actual time needed to complete:** about 6 hours
+Partner: Peter
+Drawing: https://docs.google.com/drawings/d/1yAIjPMGdjeg4hOyIrsvVEAfGHwWvnscXlczeDcJnZDY/edit
+**Name of feature:** Lab 8: Added Weather API
+**Estimate of time needed to complete:** 5 hours
+**Start time:** 2:00pm
+**Finish time:** 7:54pm
+**Actual time needed to complete:** about 6 hours
 
-- **Name of feature:** Lab 9: refactored the code
-- **Estimate of time needed to complete:** 4 hours
-- **Start time:** 3:00pm
-- **Break:** 4:30pm
-- **Start time:** 6:00pm
-- **Finish time:** 6:50pm
-- **Actual time needed to complete:** about 3 hours
+**Name of feature:** Lab 9: refactored the code
+**Estimate of time needed to complete:** 4 hours
+**Start time:** 3:00pm
+**Break:** 4:30pm
+**Start time:** 6:00pm
+**Finish time:** 6:50pm
+**Actual time needed to complete:** about 3 hours
+
+**Name of feature:** Styling
+**Estimate of time needed to complete:** 2 hours
+**Start time:** 5:15pm
+**Finish time:** 6:00pm
+**Actual time needed to complete:**  45 minutes
