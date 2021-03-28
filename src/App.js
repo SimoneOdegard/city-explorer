@@ -77,7 +77,7 @@ class App extends React.Component{
       <div className="objects">
         <center>
         <h1 className="welcome">City Explorer</h1>
-        <h3>Let's search for a city.</h3>
+        <h3 className="welcome">find a city</h3>
         <br/>
         <form className="form" onSubmit={this.getLocationInfo}>
           <input onChange={(e) => this.setState({ searchQuery: e.target.value})} placeholder="city"/>
